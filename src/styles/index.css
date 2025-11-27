@@ -1,0 +1,153 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #0b2c3d;
+  background-color: #f2f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(120deg, #0b3a5b, #0e5679);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+main {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e3eaf3;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #e8f2ff;
+  color: #0b3a5b;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.status.created { background: #fff7e6; color: #a05b00; }
+.status.reviewed { background: #e6f5ff; color: #0b3a5b; }
+.status.typical { background: #e8fff3; color: #0f7a41; }
+.status.oneoff { background: #f6e8ff; color: #6c2ab7; }
+.status.contract { background: #e8f4ff; color: #0e5679; }
+.status.manual { background: #e9e2ff; color: #3c2ba7; }
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+button {
+  background: #0e5679;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button.secondary {
+  background: #edf2f7;
+  color: #0b2c3d;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #cfd8e3;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #edf2f7;
+  text-align: left;
+}
+
+.table th {
+  background: #f7f9fb;
+  font-weight: 600;
+}
+
+.tag-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border: 1px dashed #cfd8e3;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.tag-pill {
+  background: #0e5679;
+  color: white;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
